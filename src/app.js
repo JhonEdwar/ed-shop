@@ -38,7 +38,6 @@ app.use(generateCustomResponse)
 initializePassport()
 app.use(passport.initialize())
 
-// Swagger Documentation
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs, swaggerOptions))
 app.use('/api/users',usersRoutes)
 app.use('/api/products',productsRoutes)
